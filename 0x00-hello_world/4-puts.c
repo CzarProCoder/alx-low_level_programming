@@ -1,8 +1,12 @@
 #include<stdio.h>
 
+/*
+ *main - Entry Point
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-	char first_line[] = "\"Programming is like building a multilingual puzzle";
-	puts(first_line);
+	puts("\"Programming is like building a multilingual puzzle");
 	return 0;
 }
