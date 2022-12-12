@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
-  * main -
-  * Return : 
-  */
+ * main - Entry point
+ * ch - Decalration of alphabet variable
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
