@@ -2,9 +2,9 @@
 
 /**
  * main - Entry point
- * dg - A digit vaue from 0 to 9
- * ch - An alphabet from a to f
- * Return - Always 0 (Success)
+ * dg: A digit vaue from 0 to 9
+ * ch: An alphabet from a to f
+ * Return: Always 0 (Success)
  */
 
 int main(void)
