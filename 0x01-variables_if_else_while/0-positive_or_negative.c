@@ -2,12 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/* more headers goes here*/
-
 /**
  * main: Entry point
- * n; Random number introduced
- * return; Exit success
+ * n: Random number introduced
+ * return: Exit success
  */
 
 int main(void)
