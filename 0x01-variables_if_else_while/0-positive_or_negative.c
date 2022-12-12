@@ -4,8 +4,7 @@
 
 /**
  * main: Entry point
- * n: Random number introduced
- * return: Exit success
+ * Return: Always 0 (success)
  */
 
 int main(void)
