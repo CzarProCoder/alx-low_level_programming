@@ -11,10 +11,14 @@ int main(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (ch != 'q' || ch != 'e')
-			putchar(ch);
-		else
+		if ((ch == 'q') || (ch == 'e'))
+		{
 			;
+		}
+		else
+		{
+			putchar(ch);
+		}
 	}
 	return (0);
 }
