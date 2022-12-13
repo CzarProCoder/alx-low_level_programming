@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -16,15 +16,16 @@ int main(void)
 	{
 		for (b = '0'; b <= '9'; b++)
 		{
-			for (y = '0'; y <= '9'; y++)
+			for (y = a; y <= '9'; y++)
 			{
-				for (z = (y + 1); z <= '9'; z++)
+				for (z = (b + 1); z <= '9'; z++)
 				{
 					putchar(a);
 					putchar(b);
 					putchar(' ');
 					putchar(y);
 					putchar(z);
+					
 					if (!((a == '9' && b == '8') && (y == '9' && z == '9')))
 					{
 						putchar(',');
@@ -36,5 +37,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
