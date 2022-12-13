@@ -7,20 +7,20 @@
 
 int main(void)
 {
-	int x;
+	int a;
 	int y;
 	int z;
 
-	for  (x = '0'; x <= '9'; x++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		putchar(x);
-		for (y = (x+1); y <= 9; y++)
+		for (y = (a+1); y <= 9; y++)
 		{
-			putchar(y);
 			for (z = (y+1); z <= '9'; z++)
 			{
+				putchar(a);
+				putchar(y);
 				putchar(z);
-				if ((x != '7') && (y != '8') && (z != '9'))
+				if ((a != '7') && (y != '8') && (z != '9'))
 				{
 					putchar(',');
 					putchar(',');
@@ -29,5 +29,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
