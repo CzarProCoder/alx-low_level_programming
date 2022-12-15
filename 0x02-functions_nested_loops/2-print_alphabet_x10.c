@@ -5,11 +5,11 @@
  * Return: Does not return any value(s)
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
-	int i;
+	char i;
 
-	i = 1;
+	i = '1';
 
 	while (i <= '10')
 	{
