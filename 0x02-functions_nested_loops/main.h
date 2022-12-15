@@ -5,5 +5,5 @@
  * Return:
  */
 
-int _putchar(void);
-int main(void);
+int _putchar(char c);
+int _main();
