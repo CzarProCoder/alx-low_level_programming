@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main -
- * Return:
- **/
+ * print_alphabet - Function to list alphabets
+ * Return: Does not return any value(s)
+ */
 
 void print_alphabet(void)
 {
