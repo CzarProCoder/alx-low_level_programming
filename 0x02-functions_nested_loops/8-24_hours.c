@@ -12,26 +12,27 @@ void jack_bauer(void)
 	int y;
 	int z;
 
-	a = 0;
+	a = '0';
 
-	while (a <= 2)
+	while (a <= '2')
 	{
-		b = 0;
+		b = '0';
 
-		while (b <= 3)
+		while (b <= '3')
 		{
-			y = 0;
+			y = '0';
 
-			while (y <= 5)
+			while (y <= '5')
 			{
-				z = 0;
-				while (z <= 9)
+				z = '0';
+				while (z <= '9')
 				{
 					_putchar(a);
 					_putchar(b);
 					_putchar(':');
 					_putchar(y);
 					_putchar(z);
+					_putchar('\n')
 					z++;
 				}
 				y++;
