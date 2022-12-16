@@ -20,7 +20,7 @@ void jack_bauer(void)
 
 		while (b <= 3)
 		{
-			y <= 0;
+			y = 0;
 
 			while (y <= 5)
 			{
