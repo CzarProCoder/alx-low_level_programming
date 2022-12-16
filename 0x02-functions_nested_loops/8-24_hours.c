@@ -7,18 +7,16 @@
 
 void jack_bauer(void)
 {
-	int a;
-	int b;
-	int y;
-	int z;
+	int h;
+	int m;
 
 	a = '0';
 
-	while (a <= '2')
+	while (h < '24')
 	{
-		b = '0';
+		h = '0';
 
-		while (b <= '3')
+		while (m <= '59')
 		{
 			y = '0';
 
