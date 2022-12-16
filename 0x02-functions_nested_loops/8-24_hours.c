@@ -40,6 +40,4 @@ void jack_bauer(void)
 		}
 		a++;
 	}
-	return (0);
-
 }
