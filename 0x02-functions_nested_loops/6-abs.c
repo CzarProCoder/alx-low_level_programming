@@ -6,7 +6,7 @@
  * Return: 
  */
 
-int_abs(int)
+int _abs(int)
 {
 	int i;
 	int abs_val;
