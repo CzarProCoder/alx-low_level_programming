@@ -19,6 +19,5 @@ int main(void)
 		a++;
 	}
 	printf("%d\n", sum);
-	
 	return (0);
 }
