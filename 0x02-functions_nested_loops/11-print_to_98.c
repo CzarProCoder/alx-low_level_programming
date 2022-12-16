@@ -8,7 +8,7 @@
 
 void print_to_98(int n)
 {
-	for (n; n <= 98; n++)
+	for (; n <= 98; n++)
 	{
 		if (n <= 9)
 		{
@@ -24,5 +24,5 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
