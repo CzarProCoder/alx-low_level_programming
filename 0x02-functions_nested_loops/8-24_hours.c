@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * 
- *
+ * jack_bauer - Prints every minute of the day
+ * Description: Prints from 00:00 to 23:59
  */
 
 void jack_bauer(void)
@@ -10,33 +10,22 @@ void jack_bauer(void)
 	int h;
 	int m;
 
-	a = '0';
+	h = '0';
 
 	while (h < '24')
 	{
-		h = '0';
+		m = '0';
 
-		while (m <= '59')
+		while (m < '60')
 		{
-			y = '0';
-
-			while (y <= '5')
-			{
-				z = '0';
-				while (z <= '9')
-				{
-					_putchar(a);
-					_putchar(b);
-					_putchar(':');
-					_putchar(y);
-					_putchar(z);
-					_putchar('\n');
-					z++;
-				}
-				y++;
-			}
-			b++;
+			_putchar('0' + (h / 10));
+			_putchar('0' + (h % 10));
+			_putchar(':');
+			_putchar('0' + (m / 10));
+			_putchar('0' + (m % 10));
+			_putchar('\n');
+			m++;
 		}
-		a++;
+		h++;
 	}
 }
