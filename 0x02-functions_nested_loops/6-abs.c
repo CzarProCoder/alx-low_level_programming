@@ -6,18 +6,15 @@
  * Return: 
  */
 
-int _abs(int)
+int _abs(int i)
 {
-	int i;
-	int abs_val;
-
-	if (i > 0)
+	if (i >= 0)
 	{
-		abs_val = i
+		return (i);
 	}
 	else
 	{
-		abs_val = (- (-i))
+		return (-i);
 	}
-	return (abs_val);
+	return (0);
 }
