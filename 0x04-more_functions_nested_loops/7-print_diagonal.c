@@ -9,21 +9,18 @@
 void print_diagonal(int n)
 {
 	int c;
-	int spaces;
 	int spaces_count;
 
 	if (n > 0)
 	{
 		c = 0;
-		spaces = 0;
 
 		while (c < n)
 		{
-			for (spaces_count = 0; spaces_count <= spaces; spaces_count++)
+			for (spaces_count = 0; spaces_count < c; spaces_count++)
 				_putchar(' ');
 			_putchar('\\');
 			_putchar('\n');
-			spaces++;
 			c++;
 		}
 
