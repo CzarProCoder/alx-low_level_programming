@@ -3,10 +3,10 @@
 /**
  * print_triangle - Function to print a triangle
  * @size: Size of the triangle
- * Return: Always 0 (Success)
+ * Return: Void
  */
 
-int print_triangle(int size)
+void print_triangle(int size)
 {
 	int n;
 	int c;
@@ -22,5 +22,4 @@ int print_triangle(int size)
 		}
 	}
 	_putchar('\n');
-	return (0);
 }
