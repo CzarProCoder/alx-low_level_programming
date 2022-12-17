@@ -1,4 +1,9 @@
+#ifndef MAIN_H_
+#define MAIN_H_
+
 /**
+ * main -
+ * Return:
  * This is the header fil
  */
 
@@ -23,3 +28,5 @@ void print_diagonal(int n);
 void print_square(int size);
 
 void print_triangle (int size);
+
+#endif
