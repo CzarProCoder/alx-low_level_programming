@@ -7,6 +7,6 @@ void _puts(char *str);
 
 void print_rev(char *s);
 
-void puts(char *str);
+void puts2(char *str);
 
 #endif /* MAIN_H */
