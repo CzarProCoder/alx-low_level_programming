@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * reset_to_98 -
  * @*n: a pointer to integer to be reset to 98
