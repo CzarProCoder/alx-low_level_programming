@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * puts - Function to print every character of string
+ * puts2 - Function to print every character of string
  * @str: String to be evaluated
- * @Return: void
  */
 
 void puts2(char *str)
