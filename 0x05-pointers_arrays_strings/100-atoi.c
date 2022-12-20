@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _atoi - Function to convert string to an integer
  * @s: String to be converted
