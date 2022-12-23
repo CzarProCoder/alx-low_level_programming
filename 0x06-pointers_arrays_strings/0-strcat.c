@@ -19,8 +19,8 @@ char *_strcat(char *dest, char *src)
 	}
 	while (*(src + max) <= '\0')
 	{
-		i++;
 		*(dest + i) = *(src + max);
+		i++
 		max++;
 	}
 	return (dest);
