@@ -20,14 +20,14 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	while (max <= n)
+
+	while (src[max] != src[n])
 	{
-		if (*(src + max) != '\0')
-		{
-			dest[i] = src[max];
-			i++;
-			max++;
-		}
+		dest[i] = src[max];
+		i++;
+		max++;
 	}
+	dest[i] = '\0';
+
 	return (dest);
 }
