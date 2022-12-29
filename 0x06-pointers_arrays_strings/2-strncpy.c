@@ -33,7 +33,7 @@ char *_strncpy(char *dest, char *src, int n)
 		for (m = 0; m <= src_count; m++)
 		{
 			dest[m] = src[m];
-		}	
+		}
 		while (src_count <= n)
 		{
 			src_count++;
