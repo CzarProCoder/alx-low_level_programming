@@ -2,8 +2,10 @@
 
 /**
  * _strcmp - Compares two strings
- * @s1: String 1
- * @s2: String 2
+ * @s1: String 1 to be compared
+ * @s2: String 2 to be compared
+ * Return: 0 if s1 and s2 are equal
+ * 	Another Integrer if s1 is les than or greater than s2i
  */
 
 int _strcmp(char *s1, char *s2)
@@ -18,5 +20,5 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	while (s2[j] != '\0')
 		j++;
-	return (i - j);
+	return (*s1(i) - *s2(j));
 }
