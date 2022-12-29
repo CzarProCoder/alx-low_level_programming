@@ -17,11 +17,10 @@ char *_strncpy(char *dest, char *src, int n)
 
 	src_count = 0;
 
-	for (i = 0; src[i] != '\n'; i++)	/*Calculate number of characters in src string*/
+	for (i = 0; src[i] != '\n'; i++)
 	{
 		src_count++;
 	}
-	
 	if (src_count >= n)
 	{
 		for (j = 0; j <= n; j++)
@@ -34,13 +33,12 @@ char *_strncpy(char *dest, char *src, int n)
 		for (m = 0; m <= src_count; m++)
 		{
 			dest[m] = src[m];
-		}
-		
+		}	
 		while (src_count <= n)
-			{
-				src_count++;
-				dest[src_count] = '\n';
-			}
+		{
+			src_count++;
+			dest[src_count] = '\n';
+		}
 	}
 	return (dest);
 }
