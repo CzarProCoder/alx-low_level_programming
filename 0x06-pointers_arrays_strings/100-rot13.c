@@ -24,13 +24,13 @@ char *rot13(char *str)
 	{
 		index2 = 0;
 		while (a[index2] != '\0' && str[index] != a[index2])
-			index2++;
 		{
-			if (str[index] == a[index2])
+			index2++;
+		}
+		if (str[index] == a[index2])
 			{
 				str[index] = b[index2];
 			}
-		}
 	}
 	return (str);
 }
