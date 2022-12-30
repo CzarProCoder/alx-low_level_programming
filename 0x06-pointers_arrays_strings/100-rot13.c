@@ -18,20 +18,17 @@ char *rot13(char *str)
 		'i', 'j', 'k', 'l', 'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
 		'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F',
 		'G', 'H', 'I', 'J', 'K', 'L', 'M'};
-	int index = 0;
-	int index2 = 0;
+	int index, index2;
 
-	while (str[index] != '\0')
+	for (index = 0; str[index] != '\0'; index++)
 	{
-		while (real_l[index2] != '\0')
+		for (index2 = 0; real_l[index2] != '\0'; index2++)
 		{
 			if (str[index] == real_l[index2])
 			{
 				str[index] = rot_l[index2];
 			}
-			index2++;
 		}
-		index++;
 	}
 	return (str);
 }
