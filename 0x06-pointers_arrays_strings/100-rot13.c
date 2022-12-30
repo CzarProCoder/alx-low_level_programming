@@ -22,7 +22,7 @@ char *rot13(char *str)
 
 	for (index = 0; str[index] != '\0'; index++)
 	{
-		i = 0;
+		index2 = 0;
 		while (a[index2] != '\0' && str[index] != a[index2])
 			index2++;
 		{
