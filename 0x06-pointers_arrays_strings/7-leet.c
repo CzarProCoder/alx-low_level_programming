@@ -14,7 +14,7 @@ char *leet(char *str)
 
 	for (index = 0; str[index] != '\0'; index++)
 	{
-		for (index2 = 0; a[index2] <= '\0'; index2++)
+		for (index2 = 0; a[index2] != '\0'; index2++)
 		{
 			if (str[index] == a[index2])
 			{
