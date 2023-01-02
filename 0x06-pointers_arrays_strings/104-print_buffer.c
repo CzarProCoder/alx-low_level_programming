@@ -6,6 +6,7 @@
  * @b: Pointer buffer
  * @size: size of the buffer
  */
+
 void print_buffer(char *b, int size)
 {
 	int j, k, l;
