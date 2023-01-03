@@ -12,10 +12,9 @@ char *_strchr(char *s, char c)
 	unsigned int i;
 
 	for (i = 0; i != '\0'; i++)
+	{
 		if (s[i] == c)
-			break;
-	if ((*(s + i)) == c)
-		return (s + i);
-	else
-		return ('\0');
+			return (s + i);
+	}
+	return ('\0');
 }
