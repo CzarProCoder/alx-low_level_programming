@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *_strspn - Gets the length of a prefix substring
+ * _strspn - Gets the length of a prefix substring
  * @s: Character string to be evaluated
- *@accept: Substring to be checked
- *Return: Length of prefix in bytes
+ * @accept: Substring to be checked
+ * Return: Length of prefix in bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
