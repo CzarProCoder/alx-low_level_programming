@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * memset - Fill the memeory with a contant byte
+ * _memset - Fill the memeory with a contant byte
  * @s: First character
  * @b: Second Character
  * @n: Unsigned interger
  * Return: A string (Array of charcters)
  */
 
-char *memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned long int i;
 
