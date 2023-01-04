@@ -15,10 +15,10 @@ void print_diagsums(int *a, int size)
 	while (row < size)
 	{
 		column = row;
-		if (row != ((size - 1) - row) && column != ((size - 1) - column))
-			sum += a[row][column] + a[(size - 1) - row][(size - 1) - column];
+		if (row != ((size - 1) - row) && (column != ((size - 1) - column)))
+			sum += (a[row][column]) + (a[(size - 1) - row][(size - 1) - column]);
 		else
-			sum += a[row][column];
+			sum += (a[row][column]);
 		row++;
 	}
 	printf("%u\n", sum);
