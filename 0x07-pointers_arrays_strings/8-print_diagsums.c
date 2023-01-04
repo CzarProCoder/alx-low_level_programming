@@ -9,16 +9,20 @@
 
 void print_diagsums(int *a, int size)
 {
-	int row = 0;
-	int column;
 	unsigned int sum = 0;
-	unsigned int sum2 = 0
+	unsigned int sum2 = 0;
+	int i;
 
-	for (row < size)
+	for (i = 0; i < size; i++)
 	{
-		column = row;
-		sum += a[row][column];
-		sum2 += a[row][(size - 1) - column];
+		sum += a[i];
+		a += size
 	}
-	printf("%u, %u", sum, sum2);
+	a -= size;
+	for (i = 0; i < x; i++)
+	{
+		sum2 += a[i];
+		a -= size;
+	}
+	print("%d, %d\n", sum, sum2);
 }
