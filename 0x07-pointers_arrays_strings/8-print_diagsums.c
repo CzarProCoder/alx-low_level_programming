@@ -9,17 +9,16 @@
 
 void print_diagsums(int *a, int size)
 {
-	int row = 0, column;
+	int row = 0;
+	int column;
 	unsigned int sum = 0;
+	unsigned int sum2 = 0
 
-	while (row < size)
+	for (row < size)
 	{
 		column = row;
-		if (row != ((size - 1) - row) && (column != ((size - 1) - column)))
-			sum += (a[row][column]) + (a[(size - 1) - row][(size - 1) - column]);
-		else
-			sum += (a[row][column]);
-		row++;
+		sum += a[row][column];
+		sum2 += a[row][(size - 1) - column];
 	}
-	printf("%u\n", sum);
+	printf("%u, %u", sum, sum2);
 }
