@@ -9,10 +9,10 @@
 
 int check_prime(int n, int divisor)
 {
-	if (n % divisor == 0)
-		return (0);
 	if (divisor == n)
 		return (1);
+	if (n % divisor == 0)
+		return (0);
 	return (check_prime(n, divisor + 1));
 }
 
