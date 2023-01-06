@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * check_prime
+ * check_prime - Check whether n is divisible
  * @n: Number to be evaluated
  * @divisor: The divisor
  * Return: 1 if n is prime number; else 0.
@@ -17,7 +17,7 @@ int check_prime(int n, int divisor)
 }
 
 /**
- * is_prime_number(int n)
+ * is_prime_number - Check for prime number
  * @n: Number to be evaluated
  * Return: 1 or 0
  */
