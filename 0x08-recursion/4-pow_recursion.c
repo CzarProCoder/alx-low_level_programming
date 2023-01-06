@@ -8,12 +8,18 @@
 
 int _pow_recursion(int x, int y)
 {
+	multiple = 1;
+
 	if (y < 0)
 		return (-1);
 	if (y == 0)
-		return (1);
+		return (multiple);
 	if (y == 1)
 		return (x);
-	y -= 1;
-	return x * _pow_recursion(x);
+	else if (y > 0)
+	{
+		y -= 1;
+		multiple = x * (_pow_recursion(x, y);
+		return (multiple);
+	}
 }
