@@ -1,9 +1,10 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * check_prime
  * @n: Number to be evaluated
  * @divisor: The divisor
+ * Return: 1 if n is prime number; else 0.
  */
 
 int check_prime(int n, int divisor)
