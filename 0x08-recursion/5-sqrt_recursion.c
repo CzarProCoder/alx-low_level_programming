@@ -4,6 +4,7 @@
  * find_root - Find the square root of a number
  * @n: Natural number to be evaluated
  * @root: root
+ * Return: The square root
  */
 
 int find_root(int n, int root)
@@ -18,6 +19,7 @@ int find_root(int n, int root)
 /**
  * _sqrt_recursion - Return Square root of a number
  * @n: The natural number
+ * Return: The square root of the number
  */
 
 
