@@ -9,7 +9,7 @@
 
 int check_prime(int n, int divisor)
 {
-	if ((n % divisor) == 0)
+	if (n % divisor == 0)
 		return (0);
 	if (divisor == n)
 		return (1);
@@ -26,9 +26,9 @@ int is_prime_number(int n)
 {
 	int divisor = 2;
 
-	if (n <= divisor)
+	if (n < divisor || n % 2 = 0)
 		return (0);
-	if (n == divisor)
+	if (n == 2)
 		return (1);
 
 	return (check_prime(n, divisor));
