@@ -24,9 +24,9 @@ int check_prime(int n, int divisor)
 
 int is_prime_number(int n)
 {
-	int divisor == 2;
+i	int divisor = 2;
 
-	if (n < divisor || n % 2 = 0)
+	if (n < divisor || n % 2 == 0)
 		return (0);
 	if (n == 2)
 		return (1);
