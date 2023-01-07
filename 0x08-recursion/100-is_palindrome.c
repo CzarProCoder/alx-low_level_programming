@@ -22,13 +22,13 @@ int s_length(char *s)
 
 int comp_char(char *s, int s_len)
 {
-	if (*i != *(s + (s_len - 1)))
+	if (*s != *(s + (s_len - 1)))
 		return (0);
 	if (s_len == 0)
 		return (1);
 	s_len -= 2;
 	s++;
-	return (comp_char(char *s, s_len));
+	return (comp_char(s, s_len));
 }
 
 /**
