@@ -1,6 +1,6 @@
 #include "main.h"
 
-int void(main);
+int main(void);
 
 int _putchar(char c);
 
