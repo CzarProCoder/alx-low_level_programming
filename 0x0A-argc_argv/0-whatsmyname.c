@@ -9,16 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	char *a;
-	a = argv[1];
-
 	if (argc > 0)
-	{		
-		while (*a != '\0')
-		{
-			_putchar(*a);
-		}
-		_putchar('\n');
-	}
+		printf("%s\n", argv[0]);
 	return (0);
 }
