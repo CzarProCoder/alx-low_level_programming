@@ -23,12 +23,11 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
 		s3[i] = s1[i];
-	i += 1
+	i += 1;
 	for (i; i <= k && s2[j] != '\0'; i++)
 	{
 		s3[i] = s2[j];
 		j++;
 	}
-	return (s3)
-
+	return (s3);
 }
