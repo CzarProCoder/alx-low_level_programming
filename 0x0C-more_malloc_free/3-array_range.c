@@ -1,4 +1,4 @@
-#include "maih.h"
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -16,11 +16,16 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	num = (max - min) + 1;
-	arr = malloc(num * sizeof(int));
+
+	num = ((max - min) + 1);
+
+	arr = malloc(sizeof(int) * num);
+
 	if (arr == NULL)
 		return (NULL);
+
 	for (i = 0; i < n; i++)
 		ptr[i] = min++;
+
 	return (arr);
 }
