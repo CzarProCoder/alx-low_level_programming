@@ -1,48 +1,71 @@
-#include "variadic_functions.h"
-#include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
+#include <stdio.h>
+#include <stddef.h>
 
 /**
- * print_all - Prints Anything
- * @format: List of types of arguments passed
+ * _strlen - string's size
+ *
+ * @format: string parameter
+ *
+ * Return: unsigned integer
  */
-
-void print_all(const char * const format, ...)
+unsigned int _strlen(const char * const format)
 {
-	char types[][] = {
-		{c, char, "%c"},
-		{i, int, "%d"},
-		{f, float, "%f"},
-		{s, char *, "%s"},
-		{NULL, NULL, "(Nil)"}
-	};
-	int i = 0;
-	int j = 0;
-	void arg;
+	unsigned int size = 0;
 
-	va_list args;
-
-	va_start(args, format);
-
-	while (j < 9)
+	while (format[size])
 	{
-		arg = va_arg(args, void);
-
-		if (arg == NULL)
-		{
-			printf("(NIL)\n");
-			return;
-		}
-
-		while (i < 5)
-		{
-			if (types[i][1] == typeof(arg))
-			{
-				printf(types[i][2], arg);
-				break;
-			}
-		}
+		size++;
 	}
 
+	return (size);
+}
+
+/**
+ * print_all - prints anything
+ *
+ * @format: variable's format to display
+ */
+void print_all(const char * const format, ...)
+{
+	va_list list;
+	unsigned int i = 0, validableCharacter = 0;
+	char *s;
+
+	va_start(list, format);
+
+	while (format && format[i])
+	{
+		validableCharacter = 0;
+		switch (format[i])
+		{
+			case 'c':
+				printf("%c", va_arg(list, int));
+				validableCharacter = 1;
+			break;
+			case 'i':
+				printf("%i", va_arg(list, int));
+				validableCharacter = 1;
+			break;
+			case 'f':
+				printf("%f", va_arg(list, double));
+				validableCharacter = 1;
+			break;
+			case 's':
+				s = va_arg(list, char *);
+				if (s == NULL)
+					s = "(nil)";
+				printf("%s", s);
+				validableCharacter = 1;
+			break;
+		}
+
+		if (i < _strlen(format) - 1 && validableCharacter)
+			printf(", ");
+		i++;
+	}
+
+	printf("\n");
+
+	va_end(list);
 }
