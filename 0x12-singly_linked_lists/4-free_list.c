@@ -4,13 +4,13 @@
 #include "lists.h"
 
 /**
- * free_list -
- * @head:
+ * free_list - Function that frees a list_t
+ * @head: Pointer to list to to be free
  */
 
 void free_list(list_t *head)
 {
-	while (head != NULL)
+	while (head)
 	{
 		free(head->str);
 		free(head);
