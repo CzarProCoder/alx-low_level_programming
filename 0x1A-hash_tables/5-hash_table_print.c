@@ -1,8 +1,8 @@
-#include "hash_table.h"
+#include "hash_tables.h"
 
 /**
  * hash_table_print - Function that prints a hash table
- * @ht - Hash table to print
+ * @ht: Hash table to print
  */
 
 void hash_table_print(const hash_table_t *ht)
@@ -19,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	for (index = 0; index < ht->size; index++)
 	{
-		temp = ht->array[i];
+		temp = ht->array[index];
 		while (temp != NULL)
 		{
 			printf("%s'%s': '%s'", sep, temp->key, temp->value);
