@@ -2,6 +2,7 @@
 
 ''' Module with function to return the perimeter of a grid'''
 
+
 def island_perimeter(grid):
     ''' Function to return the perimeter of a grid'''
     height = len(grid)
