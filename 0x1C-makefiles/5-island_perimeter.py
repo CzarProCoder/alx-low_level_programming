@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 ''' Module with function to return the perimeter of a grid'''
 
